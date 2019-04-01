@@ -21,7 +21,7 @@ print(type(b))
 c = 'Hello World'
 print(type(c))
 
-#列表(有序)
+#列表(有序)，是可变的
 lis = [1, 'two', 3.0, 'four']
 print(type(lis))
 
