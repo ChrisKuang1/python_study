@@ -50,3 +50,14 @@ print(c.isdigit())
 #读取用户输入,input方法中可以输入文字，用于显示文本sublime暂时不支持，input输入的内容是一个字符串内容
 #user_input=input('请输入>')
 #print(user_input)
+
+#format格式化输出
+movie_name = '流浪地球'
+movie_score = 80
+print('电影<<{}>>的评分是{},电影<<{}>>备受好评！'.format(movie_name,movie_score,movie_name))
+print('电影<<{0}>>的评分是{1},电影<<{0}>>备受好评！'.format(movie_name,movie_score))
+print('电影<<{name}>>的评分是{score},电影<<{name}>>备受好评！'.format(
+	name=movie_name,
+	score=movie_score))
+
+

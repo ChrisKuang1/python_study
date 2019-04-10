@@ -13,6 +13,7 @@ help('keywords')
 a = 1
 print(type(a))
 
+
 #数字型 - 浮点型
 b = 2.9
 print(type(b))
@@ -51,3 +52,6 @@ print(float(a))
 #python不支持字符串和数字类型自动转换运算
 print('a' + str(1))
 print(1 + int('23'))
+
+#abs求绝对值
+print(abs(-1))
