@@ -51,14 +51,14 @@ class SLList(object):
         return list_str
 
     #定义私有方法保护其中的算法
-    def __size(self, p):
+    def __count(self, p):
         if not p.next:
             return 1
         else:
-            return 1 + self.__size(p.next)
+            return 1 + self.__count(p.next)
     
     def size(self):
-        return self.__size(self.__first)
+        return self.__count(self.__first)
         #return self.__size
 
 

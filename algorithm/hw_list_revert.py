@@ -60,8 +60,7 @@ class SLList(object):
         head_tmp.next = current
 
         if m == 0:
-            head_tmp = current
-            head_tmp.next = last_tmp
+            self.__first = last_tmp
 
 
     def to_str(self):
