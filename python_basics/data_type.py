@@ -26,9 +26,18 @@ print(type(c))
 lis = [1, 'two', 3.0, 'four']
 print(type(lis))
 
-#元组（有序），创建完后就不能再进行修改了
+#元组（有序），创建完后就不能再进行修改了,使代码更安全
 arr = (1, "two", 3.0, "four")
 print(type(arr))
+#如果要定义只有一个元素的元组，必须加一个逗号来消除歧义，否则会变成其他类型
+t = (1)
+t2 = (1,)
+print(type(t), type(t2))
+#“可变”元组
+change_t = ('a','b',['A','B'])
+change_t[2][0] = 'X'
+change_t[2][1] = 'Y'
+print(change_t)
 
 #字典（无序）
 dic = {1:'one','a':'two'}
